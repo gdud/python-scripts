@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 import json
 from typing import List
 from kubectl import *
