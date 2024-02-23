@@ -4,9 +4,8 @@ import subprocess
 import json
 import os
 
-input_namespace = 'default'
-input_ignore_string = ''
-# input_ignore_string = 'istio-init'
+input_namespace = os.getenv('GTKV_NAMESPACE', 'default')
+input_ignore_string = os.getenv('GTKV_IGNORE_STRING', '')
 
 OUTPUT_DIR = 'output'
 
